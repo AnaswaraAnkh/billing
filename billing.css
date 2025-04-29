@@ -1,0 +1,415 @@
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f7fa;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .header {
+      background-color: #007BFF;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+      width:110%;
+    }
+
+    .main-container {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    /* Left block: two forms stacked, then radio buttons */
+    .left-block {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      gap: 20px;
+    }
+
+    .top-forms {
+      display: flex;
+      gap: 20px;
+    }
+
+    .form-section,
+    .form-section2,
+    .form-section1 {
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+    }
+
+    .form-section,
+    .form-section2 {
+      flex: 1;
+    }
+
+    .form-section1 {
+      width: 200px;
+      min-height: 1050px;
+    }
+
+    .form-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+
+    .form-row label {
+      width: 150px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .form-row input[type="text"],
+    .form-row input[type="date"] {
+      flex: 1;
+      padding: 5px;
+      margin-left: 10px;
+      min-width: 0;
+    }
+
+    .form-row .small-label {
+      width: auto;
+      margin-left: 20px;
+      margin-right: 5px;
+      font-weight: bold;
+    }
+
+    .form-row .small-input {
+      width: 100px;
+      padding: 5px;
+      margin-bottom: 20px;
+    }
+
+    .checkbox-row {
+      display: flex;
+      align-items: center;
+    }
+
+    .checkbox-row input[type="checkbox"] {
+      margin-right: 10px;
+    }
+
+    .form-section1 button {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+
+    .form-section1 button:hover {
+      background-color: #0056b3;
+    }
+
+    .radio-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.text {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 15px;
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      height:20px;/* Make sure the height is consistent */
+      width: 1450px;
+    }
+
+    .text input {
+      width: 50px; /* make it smaller to look like a square */
+      height: 10px; /* make height and width equal for perfect square */
+      margin: 5px; /* optional: to add some space around inputs */
+    }
+
+  .text label {
+    display: block; /* so that label and input are in separate lines */
+    margin-bottom: 5px;
+  }
+
+  .text button {
+    margin-top: 10px; /* some space before buttons */
+  }
+.radio-buttons label,
+.radio-buttons .ptag {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+/* Adjust space between radio buttons and ptag */
+.radio-buttons .ptag {
+  margin-left: 100px; /* Increase this value to add more space */
+}
+
+    /* Search and table */
+    .search-bar {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .search-bar input[type="text"] {
+      flex: 1;
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    .search-bar button {
+      padding: 8px 12px;
+      background-color: #28a745;
+      border: none;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .table-section {
+      margin-top: 20px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    table {
+      width: 100%;
+  border-collapse: collapse;
+    }
+
+    .table-section th {
+  text-align: left;
+  padding: 8px;
+  border: none; /* remove all borders */
+  border-bottom: 2px solid #ccc; /* keep only bottom border */
+ 
+  font-weight: bold;
+}
+
+
+    .total-section {
+      margin-top: 20px;
+      text-align: right;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .form-section1 .form-row label {
+      width: 80px;
+    }
+    .text1 {
+      width: 220px;
+      height: 20px;
+      background-color: rgb(56, 171, 220);
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      border-radius: 8px;
+      gap: 10px; /* space between label and input */
+    }
+    .text1 label {
+      margin-left: 80px; /* move label slightly to the right */
+      color: white; /* optional: better visibility */
+      font-weight: bold;
+    }
+    .text1 input {
+     
+      padding: 5px;
+      width:40px;
+    }
+    
+    .form-container {
+      display: flex;
+      gap: 20px;
+      padding: 10px;
+      height: 20px; /* Make the height consistent with text1 */
+      margin-top: -20px;
+      
+    }
+
+    .formsec
+      {
+      background-color: rgb(240, 199, 199);
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+    
+    }
+
+
+
+
+.form-pair {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  height: 8px;
+ 
+  
+}
+
+.form-pair label {
+  font-weight: bold;
+}
+
+.form-pair input {
+  width: 50px;
+  padding: 5px;
+}
+
+.button-pair {
+  display: flex;
+  gap: 10px;
+  margin-top: -25px;
+ 
+}
+
+.button-pair button {
+  padding: 5px 10px;
+  background-color: skyblue;
+  border-radius: 8px;
+}
+
+.highlighted-row {
+  box-shadow: 4px 4px 12px rgba(227, 220, 220, 0.5); /* Stronger 3D shadow */
+  transform: translateY(-2px); /* Slight upward lift */
+  z-index: 1; /* Stay above other rows */
+  position: relative; /* Required for z-index to apply */
+}
+
+.highlighted-row td {
+  border: 2px solid #f9f9f9; /* Clear border for 3D boundary */
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+.tabledata {
+  border: 2px solid #333; /* Border around the whole table container */
+  height: 300px;      /* Set a fixed height for scrolling */
+  overflow: auto;         /* Enables scroll bar */
+  padding: 5px;
+  margin-top: 20px;
+}
+
+.tabledata table {
+  width: 100%;
+  border-collapse: collapse; /* Ensure borders align */
+}
+
+.row th {
+  border: 1px solid #5d5b5b; /* Borders around each column */
+  padding: 5px;
+  height: -2px;
+  background-color: #e1abab; /* Optional: slight background */
+  text-align: left;
+}
+.main-row {
+  display: flex;        
+  gap: 20px;  
+  width:100%
+         
+
+}
+
+.vertical {
+  display: flex;
+  
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 15px;
+  background-color: rgb(149, 212, 219);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+.vertics{
+  display: flex;
+  
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 15px;
+  background-color:  rgb(149, 212, 219);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  
+  
+}
+
+.verti {
+  display: flex;
+  margin-left: 50px;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.verti input {
+  width: 70px;
+  height: 25px;
+}
+.emptyrow {
+  height: 30px; /* Adjust this value to set the height of the empty row */
+  width: 100%;
+  background-color: rgba(231, 167, 167, 0.5);
+  margin-bottom: 10px;
+}
+.checkbox {
+            display: flex; /* Enable Flexbox */
+            justify-content: space-between; /* Distribute space evenly */
+            align-items: center; /* Align items vertically in the center */
+            padding: 20px; /* Add padding for spacing */
+            background-color: #f0f0f0; /* Light gray background */
+            box-sizing: border-box; /* Include padding in width */
+        }
+
+        .check {
+            display: flex; /* Enable Flexbox for checkboxes */
+            gap: 40px; /* Space between checkboxes */
+            margin-right: 70px;
+            
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: row; /* Stack label and input vertically */
+            flex: 1; /* Allow form groups to grow equally */
+            margin-left: 40px;
+            gap:20px
+        }
+        .form-group input{
+          width:140px;
+        }
+        .centered-text {
+    text-align: center; /* Center the text */
+    font-weight: 900; /* Set the font weight */
+}
